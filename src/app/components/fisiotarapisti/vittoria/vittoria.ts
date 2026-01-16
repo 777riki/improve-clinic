@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-vittoria',
@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   templateUrl: './vittoria.html',
   styleUrl: './vittoria.css',
 })
-export class Vittoria {
+export class Vittoria implements OnInit {
+
+  ngOnInit(): void {
+    window.scroll(0,0);
+  }
 
 }

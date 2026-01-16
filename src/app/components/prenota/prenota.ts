@@ -35,12 +35,6 @@ export class Prenota implements OnInit {
     // Telefono
     if (!this.phone.trim()) return 'Inserisci il telefono';
     if (!/^[0-9+\- ]{7,15}$/.test(this.phone)) return 'Telefono non valido';
-    // Dimensione
-    if (!this.dimension.trim()) return 'Inserisci la dimensione';
-    if (this.dimension.length > 50) return 'Dimensione troppo lunga';
-    // Posizione
-    if (!this.position.trim()) return 'Inserisci la posizione';
-    if (this.position.length > 50) return 'Posizione troppo lunga';
     // Note (opzionale)
     if (this.notes.length > 500) return 'Le note sono troppo lunghe';
 
@@ -50,8 +44,6 @@ export class Prenota implements OnInit {
   name: string = '';
   email: string = '';
   phone: string = '';
-  dimension: string = '';
-  position: string = '';
   notes: string = '';
 
   async sendEmail() {
@@ -70,8 +62,6 @@ export class Prenota implements OnInit {
           name: this.name,
           email: this.email,
           phone: this.phone,
-          dimension: this.dimension,
-          position: this.position,
           notes: this.notes
         },
         { publicKey: this.public_key }
@@ -81,8 +71,6 @@ export class Prenota implements OnInit {
       this.name = '';
       this.email = '';
       this.phone = '';
-      this.dimension = '';
-      this.position = '';
       this.notes = '';
 
       this.alertMessage = 'Email inviata con successo!';

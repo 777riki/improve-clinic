@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-not-found',
@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   templateUrl: './not-found.html',
   styleUrl: './not-found.css',
 })
-export class NotFound {
+export class NotFound implements OnInit {
+
+  ngOnInit(): void {
+    window.scroll(0,0);
+  }
 
 }
