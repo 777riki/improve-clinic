@@ -1,0 +1,86 @@
+<nav class="navbar navbar-expand-xl shadow-lg sticky-top bg-black navbar-dark">
+  <div class="container-fluid mx-3 px-lg-4">
+
+    <!-- LOGO -->
+    <a class="navbar-brand mx-2 mx-lg-4 my-2" routerLink="/" (click)="closeNavbar()">
+      <img src="logo.jpg" alt="Improve Clinic Rovereto" class="navbar-logo" />
+    </a>
+
+    <!-- TOGGLER -->
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- MENU -->
+    <div class="collapse navbar-collapse justify-content-end text-center text-lg-start" id="navbarNavDropdown">
+
+      <ul class="navbar-nav align-items-center gap-2 gap-lg-1">
+
+        <!-- ITEMS -->
+        <li class="nav-item">
+          <a class="nav-link fw-bold mx-3" routerLink="/" (click)="closeNavbar()">
+            <i class="bi bi-house me-1"></i> Home
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link fw-bold mx-3" routerLink="/chi-siamo" (click)="closeNavbar()">
+            <i class="bi bi-people me-1"></i> Chi siamo
+          </a>
+        </li>
+
+        <!-- DROPDOWN -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-bold mx-3" role="button" data-bs-toggle="dropdown">
+            <i class="bi bi-brush me-1"></i> Il Nostro Team
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-dark shadow-lg mt-lg-2 text-center">
+            <li>
+              <a class="dropdown-item" routerLink="/fisioterapisti/vittoria" (click)="closeNavbar()">
+                Vittoria Zampieri
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/fisioterapisti/vittoria" (click)="closeNavbar()">
+                Vittoria Zampieri
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/fisioterapisti/vittoria" (click)="closeNavbar()">
+                Vittoria Zampieri
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link fw-bold mx-3" routerLink="/orario" (click)="closeNavbar()">
+            <i class="bi bi-clock me-1"></i> Orari
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link fw-bold mx-3" routerLink="/prenota" (click)="closeNavbar()">
+            <i class="bi bi-calendar me-1"></i> Prenota
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link fw-bold mx-3" routerLink="/galleria" (click)="closeNavbar()">
+            <i class="bi bi-images me-1"></i> Galleria
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link fw-bold mx-3" routerLink="/contatti" (click)="closeNavbar()">
+            <i class="bi bi-phone me-1"></i> Contatti
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>

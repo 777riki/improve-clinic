@@ -1,0 +1,64 @@
+/* Hero 404 */
+.hero-404 {
+    position: relative;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-404 .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero-404 .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+.hero-404 .hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 700px;
+}
+
+/* Pulsanti hover */
+.hero-404 .btn-outline-light:hover,
+section.bg-black .btn-outline-light:hover {
+    background-color: #e01d85;
+    border-color: #e01d85;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .hero-404 {
+        height: 60vh;
+        padding: 0 1rem;
+    }
+
+    .hero-404 h1.display-1 {
+        font-size: 5rem;
+    }
+
+    .hero-404 h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-404 p.lead {
+        font-size: 1rem;
+    }
+}

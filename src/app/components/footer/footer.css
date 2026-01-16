@@ -1,0 +1,36 @@
+/* Footer link stile navbar */
+.footer-link {
+  color: white;
+  text-decoration: none;
+  transition: all .25s ease;
+}
+
+.footer-link:hover {
+  color: #e01d85;
+  text-decoration: none;
+}
+
+/* Icone social */
+.footer-link i {
+  transition: all .25s ease;
+}
+
+.footer-link i:hover {
+  color: #e01d85;
+  transform: scale(1.2);
+}
+
+/* Footer responsive */
+@media (max-width: 991px) {
+  footer .row {
+    text-align: center;
+  }
+
+  footer .d-flex {
+    justify-content: center;
+  }
+
+  footer .mb-4 {
+    margin-bottom: 2rem !important;
+  }
+}

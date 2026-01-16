@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+h1, h2, h3, th {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+p, li, td, span, h4, h5, h6, label, input {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* larghezza scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* sfondo */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e01d85;
+  border-radius: 5px;
+}
+
+/* hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4da6;
+}

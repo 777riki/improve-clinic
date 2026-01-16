@@ -1,0 +1,74 @@
+/* Hero chi siamo */
+.hero-chi {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero-chi .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero-chi .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+.hero-chi .hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 700px;
+}
+
+/* Team images hover */
+section .rounded-4:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Valori icons */
+section i.fs-1 {
+    color: #e01d85;
+}
+
+/* CTA finale */
+section.bg-black .btn-outline-light:hover {
+    background-color: #e01d85;
+    border-color: #e01d85;
+}
+
+/* Mobile responsive */
+@media (max-width: 576px) {
+    .hero-chi {
+        height: 50vh;
+        padding: 0 1rem;
+    }
+
+    .hero-chi .hero-content h1 {
+        font-size: 1.75rem;
+    }
+
+    section i.fs-1 {
+        font-size: 2rem;
+    }
+}
+
+.btn:hover {
+    background-color: #e01d85;
+    border-color: #e01d85;
+    color: white;
+}
