@@ -5,7 +5,7 @@ nav.navbar {
 
 /* Logo */
 .navbar-logo {
-  height: 6vh;
+  height: 48px;
   max-height: 60px;
 }
 
@@ -54,5 +54,23 @@ nav.navbar {
     position: static;
     width: 100%;
     margin: 0;
+  }
+}
+
+/* Fix sticky behavior on mobile: use fixed positioning and keep navbar above content */
+@media (max-width: 767px) {
+  nav.navbar.sticky-top {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    width: 100%;
+  }
+
+  /* Ensure the collapse menu doesn't overlay content when opened */
+  .navbar-collapse {
+    position: relative;
+    z-index: 1031;
   }
 }

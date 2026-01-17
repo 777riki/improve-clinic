@@ -34,3 +34,10 @@
     margin-bottom: 2rem !important;
   }
 }
+
+
+footer .dropdown-menu {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  top: 100% !important;
+}

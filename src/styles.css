@@ -34,3 +34,10 @@ p, li, td, span, h4, h5, h6, label, input {
 ::-webkit-scrollbar-thumb:hover {
   background: #ff4da6;
 }
+
+/* Space for fixed navbar on small screens to avoid content jump/overlay */
+@media (max-width: 767px) {
+  body {
+    padding-top: 64px; /* reserve space for fixed navbar */
+  }
+}

@@ -78,3 +78,7 @@ section.bg-black .btn-outline-light:hover {
     border-color: #e01d85;
     color: white;
 }
+
+body {
+    overflow-x: hidden;
+}
