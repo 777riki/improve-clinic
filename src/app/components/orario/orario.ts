@@ -19,12 +19,12 @@ export class Orario implements OnInit {
 
   openingHours = signal<OpeningHours[]>([
     { day: 0, times: [] }, // Domenica
-    { day: 1, times: [{ start: '15:00', end: '18:30' }] }, // Lunedì 
-    { day: 2, times: [{ start: '10:00', end: '12:00' }, { start: '15:00', end: '18:30' }] }, // Martedì
-    { day: 3, times: [{ start: '10:00', end: '12:00' }, { start: '15:00', end: '18:30' }] }, // Mercoledì
-    { day: 4, times: [{ start: '10:00', end: '12:00' }, { start: '15:00', end: '18:30' }] }, // Giovedì
-    { day: 5, times: [{ start: '15:00', end: '18:30' }] }, // Venerdì
-    { day: 6, times: [{ start: '09:00', end: '12:00' }] }, // Sabato
+    { day: 1, times: [{ start: '09:00', end: '19:00' }] }, // Lunedì 
+    { day: 2, times: [{ start: '09:00', end: '19:00' }] }, // Martedì
+    { day: 3, times: [{ start: '09:00', end: '19:00' }] }, // Mercoledì
+    { day: 4, times: [{ start: '09:00', end: '19:00' }] }, // Giovedì
+    { day: 5, times: [{ start: '09:00', end: '18:00' }] }, // Venerdì
+    { day: 6, times: [] }, // Sabato
   ]);
 
   // Signal per sapere se è aperto
