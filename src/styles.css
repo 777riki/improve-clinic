@@ -35,9 +35,9 @@ p, li, td, span, h4, h5, h6, label, input {
   background: #ff4da6;
 }
 
-/* Space for fixed navbar on small screens to avoid content jump/overlay */
+/* No forced space for navbar; keep content flush under navbar */
 @media (max-width: 767px) {
   body {
-    padding-top: 64px; /* reserve space for fixed navbar */
+    padding-top: 0;
   }
 }

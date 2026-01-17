@@ -52,21 +52,28 @@ nav.navbar {
     padding: .75rem 1rem;
     display: block;
   }
+  /* ensure dropdown is positioned relative to its item and centered under the link on mobile */
+  .nav-item.dropdown {
+    position: relative;
+  }
 
   .dropdown-menu {
-    position: static;
-    width: 100%;
+    position: absolute;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: 100%;
+    width: auto;
     margin: 0;
+    z-index: 1050;
   }
 }
 
 /* Fix sticky behavior on mobile: use fixed positioning and keep navbar above content */
 @media (max-width: 767px) {
+  /* keep navbar in document flow on small screens so content (hero) sits directly below it */
   nav.navbar.sticky-top {
-    position: fixed !important;
+    position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
     z-index: 1030;
     width: 100%;
   }
