@@ -1,14 +1,14 @@
-/* Hero chi siamo */
-.hero-chi {
+/* Hero fisioterapista */
+.hero-therapist {
     position: relative;
-    height: 65svh;
+    height: 65vh;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
 }
 
-.hero-chi .hero-bg {
+.hero-therapist .hero-bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -18,7 +18,7 @@
     z-index: 1;
 }
 
-.hero-chi .hero-overlay {
+.hero-therapist .hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -28,21 +28,27 @@
     z-index: 2;
 }
 
-.hero-chi .hero-content {
+.hero-therapist .hero-content {
     position: relative;
     z-index: 3;
     max-width: 700px;
 }
 
-/* Team images hover */
-section .rounded-4:hover {
-    transform: scale(1.02);
-    transition: transform 0.3s ease-in-out;
+/* Specializzazioni e titoli icone */
+section i.fs-1, section i.fs-2 {
+    color: #e01d85;
 }
 
-/* Valori icons */
-section i.fs-1 {
+/* Contatti */
+section .footer-link {
+    color: white;
+    text-decoration: none;
+    transition: all .25s ease;
+}
+
+section .footer-link:hover {
     color: #e01d85;
+    text-decoration: none;
 }
 
 /* CTA finale */
@@ -51,18 +57,18 @@ section.bg-black .btn-outline-light:hover {
     border-color: #e01d85;
 }
 
-/* Mobile responsive */
+/* Mobile */
 @media (max-width: 576px) {
-    .hero-chi {
+    .hero-therapist {
         height: 50vh;
         padding: 0 1rem;
     }
 
-    .hero-chi .hero-content h1 {
+    .hero-therapist .hero-content h1 {
         font-size: 1.75rem;
     }
 
-    section i.fs-1 {
+    section i.fs-1, section i.fs-2 {
         font-size: 2rem;
     }
 }
@@ -71,4 +77,8 @@ section.bg-black .btn-outline-light:hover {
     background-color: #e01d85;
     border-color: #e01d85;
     color: white;
+}
+
+body {
+    overflow-x: hidden;
 }

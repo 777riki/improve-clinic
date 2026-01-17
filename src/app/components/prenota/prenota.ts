@@ -1,6 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import emailjs from '@emailjs/browser';
+import { SeoService } from '../../services/seo.service';
 
 @Component({
   selector: 'app-prenota',
@@ -17,7 +18,18 @@ export class Prenota implements OnInit {
   private template_id = "template_0dypajd";
   private public_key = "Uw3j_4-L01jNtTBjo";
 
+  constructor(private seoService: SeoService) {}
+
   ngOnInit(): void {
+    window.scroll(0, 0);
+    
+    this.seoService.setSeoData({
+      title: 'Prenota una Consulenza | Improve Clinic Rovereto',
+      description: 'Prenota online una consulenza con i nostri fisioterapisti. Richiedi un appuntamento senza impegno a Rovereto.',
+      keywords: 'prenotazione, consulenza, appuntamento, fisioterapia, online',
+      url: 'https://improveclinic.it/prenota'
+    });
+
     window.scroll(0, 0);
   }
 

@@ -1,6 +1,9 @@
 /* Navbar base */
 nav.navbar {
   min-height: auto; /* non fisso */
+  position: sticky;
+  top: 0;
+  z-index: 1020;
 }
 
 /* Logo */
@@ -73,4 +76,10 @@ nav.navbar {
     position: relative;
     z-index: 1031;
   }
+}
+
+.dropdown-menu {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  top: 100% !important;
 }

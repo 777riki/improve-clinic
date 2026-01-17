@@ -1,7 +1,7 @@
 /* HERO */
 .hero {
     position: relative;
-    min-height: 90svh;
+    min-height: 91svh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,6 +58,14 @@
 
     .hero {
         background: url("/noi.jpg") center / cover no-repeat;
+        min-height: 94svh;
+    }
+}
+
+/* IPAD PRO OTTIMIZZAZIONE */
+@media (max-width: 1024px) {
+    .hero {
+        min-height: 94svh;
     }
 }
 

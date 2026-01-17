@@ -1,4 +1,5 @@
 import { Component, computed, OnInit, signal, WritableSignal } from '@angular/core';
+import { SeoService } from '../../services/seo.service';
 
 interface OpeningHours {
   day: number; 
@@ -15,6 +16,12 @@ export class Orario implements OnInit {
 
   ngOnInit(): void {
     window.scroll(0,0);
+    this.seoService.setSeoData({
+      title: 'Orario | Improve Clinic Rovereto',
+      description: 'Orario di apertura della Improve Clinic a Rovereto.',
+      keywords: 'orario, apertura, Improve Clinic, Rovereto',
+      url: 'https://improveclinic.it/orario'
+    });
   }
 
   openingHours = signal<OpeningHours[]>([
@@ -30,7 +37,7 @@ export class Orario implements OnInit {
   // Signal per sapere se è aperto
   openNow: WritableSignal<boolean> = signal<boolean>(false);
 
-  constructor() {
+  constructor(private seoService: SeoService) {
     this.updateOpenNow();
     setInterval(() => this.updateOpenNow(), 60000);
   }
