@@ -1,7 +1,7 @@
 /* HERO */
 .hero {
     position: relative;
-    min-height: 91svh;
+    min-height: 92svh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,7 +39,7 @@
 
 /* TYPO */
 .hero h1 {
-    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-size: clamp(2rem, 2.4rem, 2.8rem);
     line-height: 1.15;
     margin-bottom: 1.5rem;
 }
@@ -78,7 +78,7 @@
 
 .scroll-down {
   position: absolute;
-  bottom: 20px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   font-size: 2rem;
